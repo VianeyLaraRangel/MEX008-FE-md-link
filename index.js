@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 const fs = require('fs');
-const listOfArgs = process.argv;
+const isMarkdown = require('./ismd'); 
+// const listOfArgs = process.argv;
 
-module.exports = () => {
-  console.log('funcionaaaa');
+
+module.exports = (fs) => {
+  
 };
