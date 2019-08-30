@@ -57,6 +57,9 @@ Si buscas verificar los links, agrega al comando la bandera `--validate`.
 
 2. Cómo API (para uso programático)
 
+- Diagrama de flujo
+![]()
+
 ![]()
 Aquí la imagen de la consola cuando...pues arroje algo.
 
