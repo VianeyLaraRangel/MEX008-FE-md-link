@@ -1,7 +1,7 @@
 #!/usr/bin/env node
+
 //Módulos de node
 const path = require('path');
-console.log(path);
 
 //Módulos internos que contienen las funciones
 const isMarkdown = require('./lib/ismd');
@@ -12,8 +12,8 @@ const identifingFile = require('./lib/identify');
 const listOfArgs = process.argv;
 const fileToRead = listOfArgs[2]; //Este es el path
 const absolutePath = path.resolve(fileToRead);
-console.log(absolutePath);
-
+const fileExtension = path.extname(absolutePath);
+console.log(fileExtension);
 
 // module.exports = () => {
 
