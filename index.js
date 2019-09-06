@@ -4,9 +4,9 @@
 const path = require('path');
 
 //Módulos internos que contienen las funciones
-// const isMarkdown = require('./lib/ismd');
-const readingFile = require('./lib/reading');
-const identifingFile = require('./lib/identify');
+const mdFile = require('./lib/ismd');
+const readingFile = require('./lib/readingLinks');
+const identifingFile = require('./lib/getLinks');
 
 //Argumentos de la línea de comandos pasados por la CLI
 const listOfArgs = process.argv;
