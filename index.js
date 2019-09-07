@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 //Módulos de node
 const path = require('path');
 
@@ -8,30 +7,28 @@ const mdFile = require('./lib/ismd');
 const readingFile = require('./lib/readingLinks');
 const identifingFile = require('./lib/getLinks');
 
-//Argumentos de la línea de comandos pasados por la CLI
-const listOfArgs = process.argv;
-const fileToRead = listOfArgs[2]; //Este es el path
-// console.log(fileToRead);
-
-const absolutePath = path.resolve(fileToRead); //Transforma a path absoluto
-
-const fileExtension = path.extname(absolutePath); //Extensión del archivo
-// console.log(fileExtension);
-
-const arrAbsolutePath = absolutePath.split();
-// console.log(arrAbsolutePath);
-
-const isMarkdown = (path) => {
-    if (fileExtension === '.md') {
-        return (console.log('Se ha detectado markdown'))
-    }else{
-        return(console.log('No se ha detectado archivo markdown'))
-    }
-};
-
-module.export = isMarkdown(fileExtension);
-
+mdFile(path);
 
 //Módulo de entrada a la aplicación (aquí se invocan módulos para pasarles argumentos)
 module.exports = (path) => {
+    
 };
+
+// module.exports = path => {
+//     const finalPath = process.argv[2] || path;
+//     const option1 = process.argv[3]
+//     if (isMarkdown(finalPath) === false) {
+//         console.log('No se encontró archivo MD')
+//         return `No se encontró archivo MD`;
+//     }
+//     const textInFile = readFile(finalPath);
+//     textInFile
+//         .then(data => {
+//             if (data === '') {
+//                 console.log('El archivo esta vacío')
+//                 return `El archivo esta vacío`;
+//             }
+//             analize(data, finalPath)
+//         })
+//         .catch(error => console.log(error))
+// };
