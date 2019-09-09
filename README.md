@@ -63,6 +63,8 @@ Si buscas verificar los links, agrega al comando la bandera `--validate`.
 ### Alcance al 09 de Septiembre,2019
 ![Consola](capturaConsola.png)
 
+![NOMD](noMD.png)
+
 ### General
 
 - [X] Puede instalarse via `npm install --global <github-user>/md-links`
