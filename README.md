@@ -58,12 +58,6 @@ Si buscas verificar los links, agrega al comando la bandera `--validate`.
 
 2. Cómo API (para uso programático)
 
-- Diagrama de flujo
-![]()
-
-![]()
-Aquí la imagen de la consola cuando...pues arroje algo.
-
 ## 6. Cumplimiento de objetivos (checklist) 
 
 ### General
@@ -72,16 +66,15 @@ Aquí la imagen de la consola cuando...pues arroje algo.
 
 ### `README.md`
 
-- [ ] Colocar el pseudo código o diagrama de flujo con el algoritmo que soluciona el problema.
-- [ ] Un board con el backlog para la implementación de la librería.
-- [ ] Documentación técnica de la librería.
-- [ ] Guía de uso e instalación de la librería
+- [X] Colocar el pseudo código o diagrama de flujo con el algoritmo que soluciona el problema.
+- [X] Documentación técnica de la librería.
+- [X] Guía de uso e instalación de la librería
 
 ### API `mdLinks(path, opts)`
 
-- [ ] El módulo exporta una función con la interfaz (API) esperada.
-- [ ] Implementa soporte para archivo individual
-- [ ] Implementa soporte para directorios
+- [X] El módulo exporta una función con la interfaz (API) esperada.
+- [X] Implementa soporte para archivo individual
+- [] Implementa soporte para directorios
 - [ ] Implementa `options.validate`
 
 ### Pruebas / tests
@@ -93,7 +86,7 @@ Aquí la imagen de la consola cuando...pues arroje algo.
 ### CLI
 
 - [X] Expone ejecutable `md-links` en el path (configurado en `package.json`)
-- [ ] Se ejecuta sin errores / output esperado
+- [X] Se ejecuta sin errores / output esperado
 - [ ] Implementa `--validate`
 - [ ] Implementa `--stats`
 
