@@ -65,6 +65,8 @@ Si buscas verificar los links, agrega al comando la bandera `--validate`.
 
 ![NOMD](noMD.png)
 
+[Herramienta](https://regexr.com/4kk9t)
+
 ### General
 
 - [X] Puede instalarse via `npm install --global <github-user>/md-links`
