@@ -1,37 +1,35 @@
 #!/usr/bin/env node
-
 //Módulos de node
 const path = require('path');
+//Hacer require del file system "fs" de node.js
+const fs = require('fs');
 
 //Módulos internos que contienen las funciones
 const mdFile = require('./lib/ismd');
 const readingFile = require('./lib/readingLinks');
 const identifingFile = require('./lib/getLinks');
 
-//Argumentos de la línea de comandos pasados por la CLI
-const listOfArgs = process.argv;
-const fileToRead = listOfArgs[2]; //Este es el path
-// console.log(fileToRead);
+//Argumentos recibidos en la CLI
+const listOfArgs = process.argv; //Usar process.argv de node para leer el path
 
-const absolutePath = path.resolve(fileToRead); //Transforma a path absoluto
+const fileToRead = listOfArgs[2]; //Este es el path (posicion de la ruta del archivo)
+// console.log(typeof(fileToRead));
 
-const fileExtension = path.extname(absolutePath); //Extensión del archivo
-// console.log(fileExtension);
+const absolutePath = path.resolve(fileToRead);
+console.log(typeof (absolutePath));
+const finalPath = absolutePath.toString();
+console.log(finalPath);
 
-const arrAbsolutePath = absolutePath.split();
-// console.log(arrAbsolutePath);
-
-const isMarkdown = (path) => {
-    if (fileExtension === '.md') {
-        return (console.log('Se ha detectado markdown'))
-    }else{
-        return(console.log('No se ha detectado archivo markdown'))
-    }
-};
-
-module.export = isMarkdown(fileExtension);
-
+//Invocaciones
+mdFile(finalPath);
+readingFile(finalPath);
 
 //Módulo de entrada a la aplicación (aquí se invocan módulos para pasarles argumentos)
 module.exports = (path) => {
+
 };
+
+
+//Hacer require del "node fetch" de node
+
+//Hacer un modulo "filterLinks" y usando expresiones regulares detectarlo
