@@ -26,9 +26,9 @@ mdFile(finalPath);
 identifingFile(finalPath);
 
 //Módulo de entrada a la aplicación (aquí se invocan módulos para pasarles argumentos)
-module.exports = (path) => {
+// module.exports = (path) => {
 
-};
+// };
 
 
 //Hacer require del "node fetch" de node

@@ -1,9 +1,10 @@
 {
   "name": "md-link-vianeylararangel",
-  "version": "2.0.0",
+  "version": "0.2.1",
   "description": "Librería que permite detectar archivos md para verificar el status de los links que contiene",
   "main": "index.js",
   "directories": {
+    "lib": "lib",
     "test": "test"
   },
   "scripts": {
@@ -26,5 +27,6 @@
   "homepage": "https://github.com/VianeyLaraRangel/MEX008-FE-md-link#readme",
   "dependencies": {
     "jest": "^24.9.0"
-  }
+  },
+  "devDependencies": {}
 }
