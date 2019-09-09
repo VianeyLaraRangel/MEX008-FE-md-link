@@ -22,7 +22,8 @@ console.log(finalPath);
 
 //Invocaciones
 mdFile(finalPath);
-readingFile(finalPath);
+// console.log(readingFile(finalPath));
+identifingFile(finalPath);
 
 //Módulo de entrada a la aplicación (aquí se invocan módulos para pasarles argumentos)
 module.exports = (path) => {

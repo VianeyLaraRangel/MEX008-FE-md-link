@@ -1,6 +1,6 @@
 {
   "name": "md-link-vianeylararangel",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "description": "Librería que permite detectar archivos md para verificar el status de los links que contiene",
   "main": "index.js",
   "directories": {
